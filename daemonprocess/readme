@@ -1,0 +1,11 @@
+1. Make sure that your terminal has daemon command install if not install it sudo apt-get install daemon 
+2. PHPMailer function will work if your computer has already install sendmail package if not install it .
+3. make exucutable file first, command ---> chmod a+x Daemon.php 
+4. Excute by ./Daemon.php
+5. Terminate program by ./Daemon stop  or  killall ./Daemon.php
+6. This is daemon process so it will not terminate by closeing terminal or doing anything else so please        terminate it by command killall ./Daemon.php either your program will run forever 
+7. To check the program, is working or not i have slept it for 1 second for one day you can change it to  
+   sleep(86400)
+8. I have made one more file Daemon.log in var/log/ directory to check that function is running proper 
+   you can check it by typing command tail -f var/log/Daemon.log  you will see a running program .
+    
